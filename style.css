@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1a191f;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    margin: 15px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.header__container {
+    display: flex;
+    min-height: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: azure;
+}
+
+.header__search {
+    padding: 0.5rem;
+    border: 1px solid #1a191f;
+    border-radius: 5px;
+    outline: none;
+}
+
+.movies {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.card {
+    max-width: 240px;
+    margin: 10px;
+    position: relative;
+}
+
+.card__cover:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.card__img__cover {
+    max-width: 100%;
+    height: 100%;
+}
+
+.card__info {
+    padding: 1rem 0;
+    color: azure;
+}
+
+.card__title {
+    font-size: 1rem;
+}
+
+.card__category {
+    font-size: 0.925rem;
+    color: orange;
+}
+
+.card__rate {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a191f;
+    border-radius: 50%;
+}
+
+.card__rate.hidden {
+    display: none;
+}
+
+.orange {
+    border: 1px solid orange;
+}
+
+.green {
+    border: 1px solid green;
+}
+
+.red {
+    border: 1px solid red;
+}
+
+.button-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.load-more {
+    border-radius: 5px;
+    width: 6rem;
+    height: 2rem;
+    border: none
+}
+
+.load-more:hover {
+    cursor: pointer;
+    background-color: #1a191f;
+    color: aliceblue;
+    border: 1px solid #8C2DEA;
+}
+
+.popup-info--visible {
+    display: block;
+}
+
+
+.modal-overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-overlay--visible {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal {
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    width: 600px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    padding: 1rem;
+    position: relative;
+}
+
+.modal--visible {
+    display: block;
+}
+
+.popup-slogan {
+    font-weight: 600;
+    color: orange; 
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.popup-description {
+   letter-spacing: 1px;
+}
+
+.popup-age {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
